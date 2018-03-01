@@ -216,7 +216,7 @@ VpaidVideoPlayer.prototype.startAd = function() {
   var muteButton = document.createElement('input');
   muteButton.setAttribute('type', 'button');
   muteButton.setAttribute('value', 'mute/unMute');
-  muteButton.setAttribute('style', 'left:25%;top:25%;');
+  muteButton.setAttribute('style', 'top:25px;left:25px;');
 
   muteButton.addEventListener('click',
       this.muteButtonOnClick_.bind(this),
