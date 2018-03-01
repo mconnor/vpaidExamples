@@ -224,7 +224,7 @@ VpaidVideoPlayer.prototype.startAd = function() {
   muteButton.setAttribute('style', 'text-decoration: none;');
   muteButton.setAttribute('style', 'font-size: 16px;');
   muteButton.setAttribute('style', 'margin: 4px 2px;');
-  muteButton.setAttribute('style', 'cursor: pointer;);');
+  muteButton.setAttribute('style', 'cursor: pointer;');
 
   muteButton.addEventListener('click',
       this.muteButtonOnClick_.bind(this),
