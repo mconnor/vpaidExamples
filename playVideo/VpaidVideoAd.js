@@ -216,7 +216,15 @@ VpaidVideoPlayer.prototype.startAd = function() {
   var muteButton = document.createElement('input');
   muteButton.setAttribute('type', 'button');
   muteButton.setAttribute('value', 'mute/unMute');
-  muteButton.setAttribute('style', 'top:25px;left:25px;');
+  muteButton.setAttribute('style', 'background-color: #4CAF50;');
+  muteButton.setAttribute('style', 'border: none;'
+  muteButton.setAttribute('style', 'color: white;'
+  muteButton.setAttribute('style', 'padding: 15px 32px;'
+  muteButton.setAttribute('style', 'text-align: center;'
+  muteButton.setAttribute('style', 'text-decoration: none;'
+  muteButton.setAttribute('style', 'font-size: 16px;'
+  muteButton.setAttribute('style', 'margin: 4px 2px;'
+  muteButton.setAttribute('style', 'cursor: pointer;);'
 
   muteButton.addEventListener('click',
       this.muteButtonOnClick_.bind(this),
