@@ -244,11 +244,11 @@ VpaidVideoPlayer.prototype.startAd = function() {
             durlyScript.setAttribute("type", "text/javascript");
             durlyScript.setAttribute("data-name", "durly");
             durlyParmaString = durlyParmaString.concat(
-                    ";ad_w=" + this.attributes_.height
+                    ";ad_w=" + this.attributes_.width
             );
           
             durlyParmaString = durlyParmaString.concat(
-                    ";ad_h=" + this.attributes_.width
+                    ";ad_h=" + this.attributes_.height
             );
         
             durlyParmaString = durlyParmaString.concat(";vpaid=true");
