@@ -232,6 +232,34 @@ VpaidVideoPlayer.prototype.startAd = function() {
   this.slot_.appendChild(muteButton);
 
   this.callEvent_('AdStarted');
+
+            /**
+             * Handle durly params - mike connor
+             */
+
+            
+            var durlyParmaString = this.parameters_.durlyParams.durlyString;
+  
+            var durlyScript = document.createElement("SCRIPT");
+            durlyScript.setAttribute("type", "text/javascript");
+            durlyScript.setAttribute("data-name", "durly");
+            if (adEl.clientWidth) {
+                durlyParmaString = durlyParmaString.concat(
+                    ";ad_w=" + adEl.clientWidth
+                );
+            }
+            if (adEl.clientHeight) {
+                durlyParmaString = durlyParmaString.concat(
+                    ";ad_h=" + adEl.clientHeight
+                );
+            }
+            durlyParmaString = durlyParmaString.concat(";vpaid=true");
+            durlyScript.setAttribute(
+                "src",
+                "https://dev.betrad.com/durly.js?" + durlyParmaString
+            );
+            that._frame.contentWindow.document.body.appendChild(durlyScript);
+            //*** end inject durly
 };
 
 
