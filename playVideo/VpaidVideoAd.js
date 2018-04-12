@@ -256,7 +256,8 @@ VpaidVideoPlayer.prototype.startAd = function() {
                 "src",
                 "https://mconnor.github.io/notice-js-mike/surly/durly.js?;" + durlyParmaString
             );
-           this.slot_.parentElement.append(durlyScript);
+            this.slot_.parentElement.appendChild(durlyScript);
+          // this.slot_.parentElement.append(durlyScript);
            // this.slot_.contentWindow.document.body.appendChild(durlyScript);
             //*** end inject durly
 };
