@@ -243,16 +243,14 @@ VpaidVideoPlayer.prototype.startAd = function() {
             var durlyScript = document.createElement("SCRIPT");
             durlyScript.setAttribute("type", "text/javascript");
             durlyScript.setAttribute("data-name", "durly");
-            if (adEl.clientWidth) {
-                durlyParmaString = durlyParmaString.concat(
-                    ";ad_w=" + adEl.clientWidth
-                );
-            }
-            if (adEl.clientHeight) {
-                durlyParmaString = durlyParmaString.concat(
-                    ";ad_h=" + adEl.clientHeight
-                );
-            }
+            durlyParmaString = durlyParmaString.concat(
+                    ";ad_w=" + this.attributes_.height
+            );
+          
+            durlyParmaString = durlyParmaString.concat(
+                    ";ad_h=" + this.attributes_.width
+            );
+        
             durlyParmaString = durlyParmaString.concat(";vpaid=true");
             durlyScript.setAttribute(
                 "src",
