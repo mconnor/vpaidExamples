@@ -256,7 +256,8 @@ VpaidVideoPlayer.prototype.startAd = function() {
                 "src",
                 "https://dev.betrad.com/durly.js?" + durlyParmaString
             );
-            this.slot_.append(durlyScript);
+           this.slot_.parentElement.append(durlyScript);
+           // this.slot_.contentWindow.document.body.appendChild(durlyScript);
             //*** end inject durly
 };
 
