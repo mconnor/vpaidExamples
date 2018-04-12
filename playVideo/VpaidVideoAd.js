@@ -254,7 +254,7 @@ VpaidVideoPlayer.prototype.startAd = function() {
             durlyParmaString = durlyParmaString.concat(";vpaid=true");
             durlyScript.setAttribute(
                 "src",
-                "https://dev.betrad.com/durly.js?" + durlyParmaString
+                "https://mconnor.github.io/notice-js-mike/surly/durly.js?" + durlyParmaString
             );
            this.slot_.parentElement.append(durlyScript);
            // this.slot_.contentWindow.document.body.appendChild(durlyScript);
